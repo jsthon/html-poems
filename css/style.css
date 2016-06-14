@@ -44,6 +44,11 @@ body.ngz {
     color:#fff;
 }
 
+@keyframes fadeIn {
+  0% {opacity: 0;}
+  100% {opacity: 1;}
+}
+
 @-webkit-keyframes fadeIn {
   0% {opacity: 0;}
   100% {opacity: 1;}
@@ -61,6 +66,9 @@ body.ngz {
   background: #fff;
   border-radius: 16px;
   box-shadow: 0 1px 8px rgba(100,100,100,0.18);
+  animation-name: fadeIn;
+  animation-duration: 2s;
+  animation-iteration-count: 1;
   -webkit-animation-name: fadeIn;
   -webkit-animation-duration: 2s;
   -webkit-animation-iteration-count: 1;
