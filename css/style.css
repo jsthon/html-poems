@@ -23,6 +23,27 @@ body.ngz {
   background: url("../img/bg-ngz.png");
 }
 
+::selection {
+    background:#41464b;
+    color:#fff;
+}
+
+::-moz-selection {
+    background:#41464b;
+    color:#fff;
+}
+
+::-webkit-selection {
+    background:#41464b;
+    color:#fff;
+}
+
+@-webkit-keyframes fadeIn {
+  0% {opacity: 0;}
+  50% {opacity: .4;}
+  100% {opacity: 1;}
+}
+
 #wrapper {
   height: 700px;
   width: 960px;
@@ -35,6 +56,10 @@ body.ngz {
   background: rgba(255, 255, 255, 0.8);
   border-radius: 16px;
   box-shadow: 0 1px 8px rgba(100,100,100,0.18);
+  -webkit-animation-name: fadeIn;
+  -webkit-animation-duration: .4s;
+  -webkit-animation-iteration-count: 1;
+  -webkit-animation-delay: 0;
 }
 
 #navigation {
