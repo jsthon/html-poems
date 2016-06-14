@@ -9,7 +9,7 @@ a {
   color: #41464b;
 }
 
-body.about {
+body.index {
   background: url("../img/bg-about.png");
 }
 
@@ -104,7 +104,14 @@ body.ngz {
 .poems {
   width: 400px;
   float: left;
-  display:inline
+  display:inline;
+}
+
+.about {
+  width: 400px;
+  float: left;
+  display:inline;
+  font-size: 1.6em;
 }
 
 .pic {
