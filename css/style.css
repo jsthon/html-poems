@@ -30,17 +30,17 @@ body.ngz {
 }
 
 ::selection {
-    background:#41464b;
+    background:#8f9396;
     color:#fff;
 }
 
 ::-moz-selection {
-    background:#41464b;
+    background:#8f9396;
     color:#fff;
 }
 
 ::-webkit-selection {
-    background:#41464b;
+    background:#8f9396;
     color:#fff;
 }
 
