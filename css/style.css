@@ -1,0 +1,83 @@
+body {
+  font-family: "Helvetica Neue",Helvetica,"PingFang SC","Hiragino Sans GB","Microsoft YaHei","微软雅黑",Arial,sans-serif;
+  color: #41464b;
+}
+
+body.about {
+  background: url("../img/bg-about.png");
+}
+
+body.xxz {
+  background: url("../img/bg-xxz.png");
+}
+
+body.ljx {
+  background: url("../img/bg-ljx.png");
+}
+
+body.dlh {
+  background: url("../img/bg-dlh.png");
+}
+
+body.ngz {
+  background: url("../img/bg-ngz.png");
+}
+
+#wrapper {
+  height: 700px;
+  width: 960px;
+  margin: auto;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 50%;
+  margin-left: -450px;
+  background: rgba(255, 255, 255, 0.8);
+  border-radius: 8px;
+  box-shadow: 0 1px 8px rgba(100,100,100,0.18);
+}
+
+#navigation {
+  height: 39px;
+  margin: 35px 0 20px;
+  border-bottom: 1px solid #e9e9ea;
+}
+
+.nav-tab {
+    display: inline-block;
+    margin: 0 41px;
+    float: left;
+    color: #41464b;
+    opacity: .6;
+    line-height: 1;
+    font-size: 18px;
+    height: 38px;
+    border-bottom: 2px solid transparent;
+    width: 110px;
+    text-align: center;
+    cursor: pointer;
+    -webkit-transition: all 0.2s ease-in;
+    -moz-transition: all 0.2s ease-in;
+    transition: all 0.2s ease-in;
+}
+
+.nav-tab.active, .nav-tab:hover {
+    opacity: 1;
+    border-color: #8f9396;
+}
+
+#container {
+
+}
+
+.title {
+
+}
+
+.content {
+
+}
+
+#footer {
+
+}
