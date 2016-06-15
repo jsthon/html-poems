@@ -1,59 +1,55 @@
 body {
-  font-family: "Helvetica Neue",Helvetica,"PingFang SC","Hiragino Sans GB","Microsoft YaHei","微软雅黑",Arial,sans-serif;
+  font-family: "Helvetica Neue", Helvetica, "PingFang SC", "Hiragino Sans GB", "Microsoft YaHei", "微软雅黑", Arial, sans-serif;
   font-size: 18px;
   color: #41464b;
 }
-
 a {
   text-decoration: none;
   color: #41464b;
 }
-
-body.index {
+body.about {
   background: url("../img/bg-about.png");
 }
-
 body.xxz {
   background: url("../img/bg-xxz.png");
 }
-
 body.ljx {
   background: url("../img/bg-ljx.png");
 }
-
 body.dlh {
   background: url("../img/bg-dlh.png");
 }
-
 body.ngz {
   background: url("../img/bg-ngz.png");
 }
-
 ::selection {
-    background:#8f9396;
-    color:#fff;
+  background: #8f9396;
+  color: #fff;
 }
-
 ::-moz-selection {
-    background:#8f9396;
-    color:#fff;
+  background: #8f9396;
+  color: #fff;
 }
-
 ::-webkit-selection {
-    background:#8f9396;
-    color:#fff;
+  background: #8f9396;
+  color: #fff;
 }
-
 @keyframes fadeIn {
-  0% {opacity: 0;}
-  100% {opacity: 1;}
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
 }
-
 @-webkit-keyframes fadeIn {
-  0% {opacity: 0;}
-  100% {opacity: 1;}
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
 }
-
 #wrapper {
   height: 700px;
   width: 960px;
@@ -65,7 +61,7 @@ body.ngz {
   margin-left: -450px;
   background: #fff;
   border-radius: 16px;
-  box-shadow: 0 1px 8px rgba(100,100,100,0.18);
+  box-shadow: 0 1px 8px rgba(100, 100, 100, 0.18);
   animation-name: fadeIn;
   animation-duration: 2s;
   animation-iteration-count: 1;
@@ -73,13 +69,11 @@ body.ngz {
   -webkit-animation-duration: 2s;
   -webkit-animation-iteration-count: 1;
 }
-
 #navigation {
   height: 39px;
   margin: 35px 0 55px;
   border-bottom: 1px solid #e9e9ea;
 }
-
 .nav-tab {
   display: inline-block;
   margin: 0 41px;
@@ -96,32 +90,51 @@ body.ngz {
   -moz-transition: all 0.2s ease-in;
   transition: all 0.2s ease-in;
 }
-
 .nav-tab.active, .nav-tab:hover {
   opacity: 1;
   border-color: #8f9396;
 }
-
 #container {
   font-family: "Kaiti SC", "KaiTi", 楷体, 楷体_GB2312, serif;
   line-height: 1.5;
   margin: auto;
   width: 650px;
 }
-
-.poems {
+.text {
   width: 400px;
   float: left;
-  display:inline;
+  display: inline;
 }
-
-.about {
-  width: 400px;
-  float: left;
-  display:inline;
+.text.big {
   font-size: 1.6em;
 }
-
+.typewriter {
+  display: none;
+}
+.typewriter:after {
+  content: "_";
+  animation: flash .6s steps(2, start) infinite;
+  -webkit-animation: flash .6s steps(2, start) infinite;
+}
+.typewriter.gameover:after {
+  display: none;
+}
+@keyframes flash {
+  0% {
+    visibility: visible;
+  }
+  100% {
+    visibility: hidden;
+  }
+}
+@-webkit-keyframes flash {
+  0% {
+    visibility: visible;
+  }
+  100% {
+    visibility: hidden;
+  }
+}
 .pic {
   width: 250px;
   float: right;
@@ -131,7 +144,6 @@ body.ngz {
   -o-transition: -o-transform 2s ease-out;
   -ms-transition: -ms-transform 2s ease-out;
 }
-
 .pic:hover {
   -webkit-transform: rotateZ(360deg);
   -moz-transform: rotateZ(360deg);
@@ -139,16 +151,13 @@ body.ngz {
   -ms-transform: rotateZ(360deg);
   transform: rotateZ(360deg);
 }
-
 .title {
   font-size: 1.8em;
 }
-
 .author {
   font-size: 1.2em;
   margin: 20px 0 20px 120px;
 }
-
 .content {
   font-size: 1.4em;
 }
